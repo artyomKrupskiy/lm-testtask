@@ -71,6 +71,7 @@
     box-sizing: border-box;
     margin: 20px auto;
     margin-bottom: 0;
+    border-radius: 5px;
 }
 
 .done {
