@@ -1,38 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .App {
-  text-align: center;
+    width: 100vw;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gray {
+    background-color: gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.green {
+    background-color: #4ad46f;
 }
 
-.App-link {
-  color: #61dafb;
+.progress-bar {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.groups-container {
+    display: inline-flex;
+    width: 65vw;
+    justify-content: space-evenly;
+}
+
+.group {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.group-title {
+    margin: 40px 0 10px 0;
+}
+
+.group-item {
+    display: inline-flex;
+    color: #12802f;
+    align-items: center;
+    border-radius: 5px;
+    min-width: 250px;
+    margin: 6px;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    border-right: 30px solid;
+    box-shadow: rgb(149 157 165 / 20%) 0 8px 10px
+}
+
+.group-item:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.common-completed-items-count {
+    width: 500px;
+    height: 25px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+
+.done {
+    background-color: #042861;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-in-percents {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transition: .5s;
+}
+
+.white-font {
+    color: white;
+}
+
+.gray-font {
+    color: gray;
+}
+
+.blue-font {
+    color: #042861;
 }
