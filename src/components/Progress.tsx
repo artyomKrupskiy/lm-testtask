@@ -17,7 +17,7 @@ const Progress: React.FunctionComponent<IProps> = ({total, completed}) => {
         <div className='progress-bar'>
             <h3>{`${completed}  Questions  Completed out of ${total}`}</h3>
             <div className='common-completed-items-count'>
-                <div className='done' style={{width: `${progress.toFixed(1)}%` }}></div>
+                <div className='done' style={{width: `${progress.toFixed(1)}%`}}></div>
                 <div className={`progress-in-percents ${fontStyle}`}>{`${progress.toFixed(1)}%`}</div>
             </div>
         </div>

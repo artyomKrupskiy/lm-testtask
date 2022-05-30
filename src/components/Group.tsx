@@ -16,7 +16,7 @@ const Group: React.FunctionComponent<IProps> = ({title, elements, completedItems
 
             {elements.map((item) => {
                 return (
-                    <GroupElement key={item.id} item={item} toggleIsCheckedItem={toggleIsCheckedItem} />
+                    <GroupElement key={item.id} item={item} toggleIsCheckedItem={toggleIsCheckedItem}/>
                 );
             })}
         </div>

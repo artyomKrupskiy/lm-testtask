@@ -36,7 +36,7 @@ const convertDataToCategoriesMap = (data: any[]): CategoriesMap => {
         if (newData[item.category]) {
             newData[item.category].push(element);
         } else {
-            newData[item.category] = [ element ];
+            newData[item.category] = [element];
         }
     }
 
@@ -113,7 +113,7 @@ const App: React.FunctionComponent = () => {
 
     return (
         <div className="App">
-            <Progress total={initialItemsCount} completed={completedItemsCount} />
+            <Progress total={initialItemsCount} completed={completedItemsCount}/>
             <div className='groups-container'>{renderGroups(data)}</div>
         </div>
     );
